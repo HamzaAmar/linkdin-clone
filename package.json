@@ -10,7 +10,18 @@
     "postinstall": "remix setup node",
     "start": "remix-serve build",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "lint": "eslint",
+    "lint:fix": "npm run lint --fix",
+    "lint:check": "npm run lint --quiet",
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\"",
+    "validation": "npm run type-check && npm run lint:check && npm run prettier:check",
+    "validation:correct": "npm run type-check && npm run lint:check && npm run prettier:check",
+    "pre-commit": "lint-staged",
+    "cz": "exec < /dev/tty && git cz --hook || true"
   },
   "dependencies": {
     "@remix-run/react": "^1.1.3",
