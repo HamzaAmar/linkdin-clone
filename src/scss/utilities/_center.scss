@@ -1,0 +1,10 @@
+/*
+  Center Utility Class
+  
+*/
+
+.u_center {
+  display: var(--center-display, flex);
+  justify-content: center;
+  align-items: center;
+}

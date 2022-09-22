@@ -1,0 +1,27 @@
+.u_radius__none {
+  --shared-radius: var(--radius-none);
+}
+
+.u_radius__sm {
+  --shared-radius: var(--radius-sm);
+}
+
+.u_radius__md {
+  --shared-radius: var(--radius-md);
+}
+
+.u_radius__lg {
+  --shared-radius: var(--radius-lg);
+}
+
+.u_radius__xl {
+  --shared-radius: var(--radius-xl);
+}
+
+.u_radius__round {
+  --shared-radius: var(--radius-round);
+}
+
+.u_radius__full {
+  --shared-radius: var(--radius-full);
+}
