@@ -1,0 +1,11 @@
+:root {
+  --font-xxs: clamp(0.58rem, 0.56rem + 0.09vw, 0.64rem);
+  --font-xs: clamp(0.69rem, 0.66rem + 0.15vw, 0.8rem);
+  --font-sm: clamp(0.83rem, 0.79rem + 0.24vw, 1rem);
+  --font-base: clamp(1rem, 0.93rem + 0.36vw, 1.25rem);
+  --font-md: clamp(1.2rem, 1.1rem + 0.52vw, 1.56rem);
+  --font-lg: clamp(1.44rem, 1.29rem + 0.73vw, 1.95rem);
+  --font-xl: clamp(1.73rem, 1.52rem + 1.02vw, 2.44rem);
+  --font-2xl: clamp(2.07rem, 1.79rem + 1.4vw, 3.05rem);
+  --font-3xl: clamp(2.49rem, 2.11rem + 1.9vw, 3.82rem);
+}
