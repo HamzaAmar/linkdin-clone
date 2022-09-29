@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { SVGProps } from 'react'
+import type { SVGProps } from 'react'
 
 const plus = (props: SVGProps<SVGSVGElement>) => (
   <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
