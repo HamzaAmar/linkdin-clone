@@ -13,21 +13,21 @@
 }
 
 .u_secondary {
-  --shared-color-0: var(--color-text -0);
-  --shared-color-1: var(--color-text-1);
-  --shared-color-2: var(--color-text-2);
-  --shared-color-3: var(--color-text-3);
-  --shared-color-4: var(--color-text-4);
-  --shared-color-5: var(--color-text-5);
-  --shared-color-6: var(--color-text-6);
-  --shared-color-7: var(--color-text-7);
-  --shared-color-8: var(--color-text-8);
-  --shared-color-9: var(--color-text-9);
-  --shared-color-10: var(--color-text-10);
+  --shared-color-0: var(--color-secondary-0);
+  --shared-color-1: var(--color-secondary-1);
+  --shared-color-2: var(--color-secondary-2);
+  --shared-color-3: var(--color-secondary-3);
+  --shared-color-4: var(--color-secondary-4);
+  --shared-color-5: var(--color-secondary-5);
+  --shared-color-6: var(--color-secondary-6);
+  --shared-color-7: var(--color-secondary-7);
+  --shared-color-8: var(--color-secondary-8);
+  --shared-color-9: var(--color-secondary-9);
+  --shared-color-10: var(--color-secondary-10);
 }
 
 .u_danger {
-  --shared-color-0: var(--color-danger -0);
+  --shared-color-0: var(--color-danger-0);
   --shared-color-1: var(--color-danger-1);
   --shared-color-2: var(--color-danger-2);
   --shared-color-3: var(--color-danger-3);
@@ -55,7 +55,7 @@
 }
 
 .u_warning {
-  --shared-color-0: var(--color-warning -0);
+  --shared-color-0: var(--color-warning-0);
   --shared-color-1: var(--color-warning-1);
   --shared-color-2: var(--color-warning-2);
   --shared-color-3: var(--color-warning-3);

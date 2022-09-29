@@ -1,66 +1,91 @@
+/*
+ 1-  TO Support in flex and in grid because safari does not support end in flex
+*/
+
 // Justify Content Section Style Start
 
-.justify-end {
+.u_justify-end {
+  justify-content: flex-end; // 1
   justify-content: end;
 }
-.justify-between {
+
+.u_justify-between {
   justify-content: space-between;
 }
-.justify-around {
+
+.u_justify-around {
   justify-content: space-around;
 }
-.justify-evenly {
+
+.u_justify-evenly {
   justify-content: space-evenly;
 }
-.justify-center {
+
+.u_justify-center {
   justify-content: center;
 }
+
 // Justify Content Section Style End
 
 // Align Item Section Style Start
-.justify-items-center {
+
+.u_justify-items-center {
   justify-items: center;
 }
-.justify-items-end {
+
+.u_justify-items-end {
+  justify-content: flex-end; // 1
   justify-items: end;
 }
-.justify-items-baseline {
+
+.u_justify-items-baseline {
   justify-items: baseline;
 }
-.justify-items-stretch {
+
+.u_justify-items-stretch {
   justify-items: stretch;
 }
 
 // Align Item Section Style End
 
 // Align Item Section Style Start
-.items-center {
+
+.u_items-center {
   align-items: center;
 }
-.items-end {
+
+.u_items-end {
+  align-items: flex-end; // 1
   align-items: end;
 }
-.items-baseline {
+
+.u_items-baseline {
   align-items: baseline;
 }
-.items-stretch {
-  align-items: stretch;
+
+.u_items-start {
+  align-items: flex-start; // 1
+  align-items: start;
 }
 
 // Align Item Section Style End
 
 // Align Content Section Style Start
 
-.content-end {
+.u_content-end {
+  align-content: flex-end; // 1
   align-content: end;
 }
-.content-between {
+
+.u_content-between {
   align-content: space-between;
 }
-.content-around {
+
+.u_content-around {
   align-content: space-around;
 }
-.content-evenly {
+
+.u_content-evenly {
   align-content: space-evenly;
 }
 
