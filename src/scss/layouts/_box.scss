@@ -1,0 +1,9 @@
+.l_box {
+  --box-padding-block: 0.5rem;
+  --box-padding-inline: 1.25rem;
+
+  border-radius: 1rem;
+  padding: var(--box-padding-block) var(--box-padding-inline);
+  border: 1px solid rgba(0 0 0 / 15%);
+  background-color: var(--color-background-0);
+}
