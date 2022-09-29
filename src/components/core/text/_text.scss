@@ -1,0 +1,80 @@
+.text {
+  color: var(--color-text, currentColor);
+
+  // display: inline-flex;
+  display: flex;
+  gap: 0.25rem;
+  max-width: 100%;
+}
+
+/* Text Variant Styles Section Start */
+
+.text__3xs {
+  font-size: 0.5rem;
+}
+
+.text__2xs {
+  font-size: 0.675rem;
+}
+
+.text__xs {
+  font-size: 0.75rem;
+}
+
+.text__sm {
+  font-size: 0.875rem;
+}
+
+.text__md {
+  font-size: 1rem;
+}
+
+.text__lg {
+  font-size: 1.25rem;
+}
+
+.text__xl {
+  font-size: 1.5rem;
+}
+
+.text__2xl {
+  font-size: 1.75rem;
+}
+
+.text__3xl {
+  font-size: 2rem;
+}
+
+/* Text Variant Style Section End */
+
+/* Text Color Styles Section Start */
+
+.text__text {
+  color: var(--color-text-9);
+}
+
+.text__grey {
+  color: var(--color-text-2);
+}
+
+.text__primary {
+  color: var(--color-primary-5);
+}
+
+.text__danger {
+  color: var(--color-danger-5);
+}
+
+.text__warning {
+  color: var(--color-warning-4);
+}
+
+.text__info {
+  color: var(--color-info-5);
+}
+
+.text__success {
+  color: var(--color-success-7);
+}
+
+/* Text Color Style Section End */
