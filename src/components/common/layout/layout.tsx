@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useRef } from 'react'
+import { CSSProperties, useRef } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Header, Messages } from '..'
 

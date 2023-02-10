@@ -2,7 +2,7 @@ import { Avatar, Button, Flex, Heading, Separator, Text } from '@components/core
 import { Link, NavLink } from 'react-router-dom'
 import { NAV_MENU } from './header.data'
 import type { HeaderProps } from './header.type'
-import { Grid, Linkdin, Square, Triangle } from '@components/icons'
+import { Linkdin, Square, Triangle } from '@components/icons'
 import { WorkDialog } from '@components/dialog'
 import { forwardRef } from 'react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'

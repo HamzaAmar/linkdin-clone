@@ -1,0 +1,22 @@
+.info-container {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+  padding: 2rem 0.5rem;
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.info--list {
+  display: inline-flex;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-item--link:hover {
+  text-decoration: underline;
+  color: var(--color-primary-6);
+}
+
+.info-item--link:visited {
+  color: purple;
+}
