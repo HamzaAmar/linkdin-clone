@@ -1,0 +1,6 @@
+.profile-learning--list {
+  & > * + * {
+    border-top: 1px solid rgba(0 0 0 / 10%);
+    padding-top: 1rem;
+  }
+}

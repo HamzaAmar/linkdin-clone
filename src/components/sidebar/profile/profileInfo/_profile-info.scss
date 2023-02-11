@@ -1,0 +1,12 @@
+.profile-info {
+  color: var(--color-text-6);
+  font-weight: 500;
+}
+
+.profile-info > * + * {
+  border-top: 1px solid rgba(0 0 0 /10%);
+}
+
+.profile-info > * {
+  padding: 0.5rem 0;
+}
