@@ -1,0 +1,26 @@
+.job-option--item {
+  display: inline-block;
+  width: 100%;
+}
+
+.job-option--list {
+  padding: 1rem;
+  color: var(--color-text-6);
+}
+
+.job-seeker--link {
+  font-size: 0.75rem;
+  margin-inline: -1.25rem;
+  width: calc(100% + 2.5rem);
+  padding: 0.25rem 1.25rem;
+  font-weight: bold;
+}
+
+.job-seeker--link:hover {
+  background-color: var(--color-primary-0);
+  text-decoration: underline;
+}
+
+.job-seeker--link-image {
+  border-radius: 0.5rem;
+}
