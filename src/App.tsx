@@ -1,11 +1,8 @@
 import '@scss/main.scss'
+import LinkdinRoutes from '@routes/pages'
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  )
+  return <LinkdinRoutes />
 }
 
 export default App
