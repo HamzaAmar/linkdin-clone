@@ -1,0 +1,43 @@
+.notification-article {
+  padding: 0.75rem 1.5rem;
+  max-width: 800px;
+  position: relative;
+  cursor: pointer;
+}
+
+.notification__highlight::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0.5rem;
+  inset-block-start: 50%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-primary-5);
+}
+
+.notification-article:hover {
+  backdrop-filter: brightness(0.97);
+}
+
+.notification__highlight:hover {
+  background-color: hsl(205deg 50% 85%);
+}
+
+.notification__highlight {
+  background-color: hsl(205deg 50% 90%);
+}
+
+.notification--item-popover {
+  color: var(--color-text-7);
+
+  --flex-gap: 0.5rem;
+}
+
+.notification-item--circle {
+  --circe-size: 1.5rem;
+
+  background-color: currentcolor;
+  align-items: center;
+  display: inline-flex;
+}
