@@ -1,0 +1,43 @@
+.my-card {
+  padding: 0;
+  overflow: hidden;
+  min-width: 180px;
+}
+
+.my-card__header {
+  text-align: center;
+}
+
+.my-card__hero-image {
+  max-height: 60px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.my-card--text-content {
+  padding: 0.5rem 0.75rem;
+}
+
+.my-card > * + * {
+  border-top: 1px solid rgba(0 0 0 / 15%);
+}
+
+.my-card--avatar {
+  // transform: translateY(-50%);
+  margin-top: -2rem;
+}
+
+.my-card__link-container {
+  padding-block: 0.5rem;
+}
+
+.my-card__link {
+  padding: 0.25rem 0.5rem;
+  line-height: 1.25;
+  display: inline-flex;
+  width: 100%;
+}
+
+.my-card__link:hover {
+  background-color: rgba(0 0 0 / 5%);
+}
