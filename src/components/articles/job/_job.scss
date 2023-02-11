@@ -1,0 +1,11 @@
+.job-container:hover .job--eye-button {
+  visibility: visible;
+}
+
+.job-container {
+  padding: 1rem 0.75rem;
+}
+
+.job--eye-button {
+  visibility: hidden;
+}
