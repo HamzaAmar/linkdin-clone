@@ -88,18 +88,6 @@ OutlineBadgeWarning.args = {
 
 export const OutlineBadgeSecondary = Template.bind({})
 
-OutlineBadgeSecondary.args = {
-  variant: 'outline',
-  color: 'secondary',
-}
-
-export const SecondaryDot = Template.bind({})
-
-SecondaryDot.args = {
-  variant: 'dot',
-  color: 'secondary',
-}
-
 export const PrimaryDot = Template.bind({})
 
 PrimaryDot.args = {

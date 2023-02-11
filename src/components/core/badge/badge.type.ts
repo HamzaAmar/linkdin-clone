@@ -1,8 +1,7 @@
-type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type Color = 'primary' | 'secondary' | 'danger' | 'success' | 'warning' | 'purple'
+import { Color, Size } from '@type/utils'
 
 interface BadgeBaseProps {
-  size?: Size
+  size?: Omit<Size, '2xl' | '2xs'>
   color?: Color
   className?: string
 }

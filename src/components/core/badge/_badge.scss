@@ -16,7 +16,11 @@
   background-image: linear-gradient(to right, var(--shared-color-5), var(--shared-color-4));
 }
 
-/* Size Badge Section Style Start */
+/* 
+================================================================================================
+    Size Style Section
+================================================================================================
+*/
 .badge__xs {
   font-size: 0.5rem;
 }
@@ -33,14 +37,18 @@
   font-size: 0.875rem;
 }
 
-/* Size Badge Section Style End */
+.badge__xl {
+  font-size: 1rem;
+}
 
-/* Color Badge Section Style Start */
+/* 
+================================================================================================
+    Variant Style Section
+================================================================================================
+*/
 
 .badge__dot {
   --size: 0.75em;
-
-  animation: pulse 1s infinite alternate $ease-out;
 }
 
 .badge__outline {
@@ -53,12 +61,4 @@
 
 .badge__numeric {
   --size: 2.375em;
-}
-
-/* Color Badge Section Style End */
-
-@keyframes pulse {
-  to {
-    transform: scale(1.25);
-  }
 }
