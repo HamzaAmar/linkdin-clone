@@ -1,0 +1,90 @@
+export const INVITATIONS = [
+  {
+    slug: 'invitation1 here we go-12567879',
+    from: 'recheal-green',
+    to: 'hamza-miloud-amar-463b24167',
+  },
+  {
+    slug: 'invitation2 here we go-12567879',
+    from: 'jesica-loma',
+    to: 'hamza-miloud-amar-463b24167',
+  },
+  {
+    slug: 'invitation3 here we go-12567879',
+    from: 'meki-lou',
+    to: 'hamza-miloud-amar-463b24167',
+    message: 'Are you ready for a job , we need a front end web developer for a mission of 5 month',
+  },
+  {
+    slug: 'invitation4 here we go-12567879',
+    from: 'tom-kelly',
+    to: 'meki-lou',
+    message: '',
+  },
+  {
+    slug: 'invitation5 here we go-12567879',
+    from: 'tom-kelly',
+    to: 'hamza-miloud-amar-463b24167',
+    message: '',
+  },
+  {
+    slug: 'invitation6 here we go-12567879',
+    from: '',
+    to: 'recheal-green',
+    message: '',
+  },
+  {
+    slug: 'invitation7 here we go-12567879',
+    from: 'sara-lviv',
+    to: 'hamza-miloud-amar-463b24167',
+    message: '',
+  },
+  {
+    slug: 'invitation8 here we go-12567879',
+    from: '',
+    to: '',
+    message: '',
+  },
+  {
+    slug: 'invitation9 here we go-12567879',
+    from: 'sara-lviv',
+    to: 'jesica-loma',
+    message: '',
+  },
+  {
+    slug: 'invitation10 here we go-12567879',
+    from: 'sara-lviv',
+    to: 'recheal-green',
+    message: '',
+  },
+  {
+    slug: 'invitation11 here we go-12567879',
+    from: 'sara-lviv',
+    to: 'hamza-miloud-amar-463b24167',
+    message: '',
+  },
+  {
+    slug: 'invitation12 here we go-12567879',
+    from: '',
+    to: 'jesica-loma',
+    message: '',
+  },
+  {
+    slug: 'invitation13 here we go-12567879',
+    from: '',
+    to: 'tom-kelly',
+    message: '',
+  },
+  {
+    slug: 'invitation14 here we go-12567879',
+    from: '',
+    to: 'tom-kelly',
+    message: '',
+  },
+  {
+    slug: 'invitation15 here we go-12567879',
+    from: '',
+    to: 'jesica-loma',
+    message: '',
+  },
+]
