@@ -1,26 +1,29 @@
 import { classnames } from '@utils/classnames'
-import React, { CSSProperties, ElementType } from 'react'
-import type { FlexProps } from './flex.type'
+import { forwardRef } from 'react'
 
-const Flex = <T extends ElementType = ElementType>(props: FlexProps<T>) => {
+import type { FlexProps } from './flex.type'
+import type { ForwardRefComponent } from '@type/polymorphic.type'
+
+const Flex = forwardRef((props, forwardedRef) => {
   const { children, justify, items, flex, direction, wrap, inline, as: Tag = 'div', gap, className, ...rest } = props
   const flexClassName = classnames('flex', {
-    [`u_justify-${justify}`]: Boolean(justify),
-    [`u_items-${items}`]: Boolean(items),
-    [`u_flex-${flex}`]: Boolean(items),
-    [`u_direction-${direction}`]: Boolean(direction),
-    'u_wrap-wrap': Boolean(wrap),
-    'u_flex-inline': Boolean(inline),
-    [`${className}`!]: Boolean(className),
+    [`u_justify-${justify}`]: !!justify,
+    [`u_items-${items}`]: !!items,
+    // [`u_flex-${flex}`]: !!items,
+    [`u_direction-${direction}`]: !!direction && direction !== 'row',
+    'u_wrap-wrap': !!wrap,
+    'u_flex-inline': !!inline,
+    [`u_spacing-${gap}`]: !!gap,
+    [`${className}`!]: !!className,
   })
 
-  const style = gap ? { style: { '--flex-gap': gap } as CSSProperties } : {}
-
   return (
-    <Tag {...flexClassName} {...style} {...rest}>
+    <Tag ref={forwardedRef} {...flexClassName} {...rest}>
       {children}
     </Tag>
   )
-}
+}) as ForwardRefComponent<'div', FlexProps>
+
+Flex.displayName = 'Flex'
 
 export default Flex

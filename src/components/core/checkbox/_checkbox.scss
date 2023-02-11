@@ -1,0 +1,86 @@
+.checkbox-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: fit-content;
+  padding: 0.25em;
+  border-radius: 0.375em;
+  cursor: pointer;
+  color: var(--color-text-6);
+}
+
+.checkbox-container[data-disabled='true'] ~ * {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkbox-container:focus-within {
+  outline: 2px dashed var(--shared-color-5);
+  outline-offset: 2px;
+}
+
+.checkbox-container:hover .custom-checkbox {
+  box-shadow: 0 0 0 2px black;
+}
+
+.checkbox:active + .custom-checkbox {
+  box-shadow: 0 0 0 0.25em var(--shared-color-1);
+}
+
+.checkbox:disabled + .custom-checkbox {
+  box-shadow: none;
+}
+
+.checkbox:checked + .custom-checkbox {
+  //  I use box-shadow over background for print https://stackoverflow.com/a/15185205/9945662
+  box-shadow: inset 0 0 0 1000px var(--shared-color-6);
+  border-color: var(--shared-color-6);
+}
+
+.checkbox:checked + .custom-checkbox > .checkbox__check-icon {
+  stroke-dashoffset: 0;
+  fill: white;
+  transition: stroke-dashoffset 0.25s;
+}
+
+.checkbox__check-icon {
+  transition: stroke-dashoffset 0.25s;
+  line-height: 0;
+}
+
+.custom-checkbox {
+  width: 1.75em;
+  height: 1.75em;
+  color: transparent;
+  border-radius: 0.25em;
+  border: 1.5px solid var(--color-background-6);
+  background-color: var(--color-background-1);
+  display: inline-flex;
+}
+
+// Style Radio Size Start
+.checkbox--sm {
+  font-size: 0.75rem;
+}
+
+.checkbox--md {
+  font-size: 0.875rem;
+}
+
+.checkbox--lg {
+  font-size: 1rem;
+}
+@media (forced-colors: active) {
+  .checkbox-container[data-disabled='true'] {
+    color: GrayText;
+  }
+
+  .checkbox-container[data-disabled='true'] .custom-checkbox {
+    background-color: GrayText;
+  }
+}
+
+// @media print {
+//   .custom-checkbox {
+//   }
+// }

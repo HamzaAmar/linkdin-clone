@@ -1,9 +1,10 @@
 // this classnames is a little bit different than the the classic one it return obj not a string
-import { CSSProperties } from 'react'
+import { CSSProperties, forwardRef } from 'react'
 import { classnames } from '@utils/classnames'
-import type { HTMLTextElements, TextProps } from './text.type'
+import type { TextProps } from './text.type'
+import { ForwardRefComponent } from '@type/polymorphic.type'
 
-const text = <T extends HTMLTextElements = HTMLTextElements>(props: TextProps<T>) => {
+const text = forwardRef((props, forwardedRef) => {
   const {
     as: Comp = 'p',
     size = 'md',
@@ -30,7 +31,7 @@ const text = <T extends HTMLTextElements = HTMLTextElements>(props: TextProps<T>
     [`${className}`]: Boolean(className),
     [`u_transform__${transform}`]: Boolean(transform),
     [`u_align__${align}`]: Boolean(align),
-    [`u_weight__${weight}`]: Boolean(weight),
+    [`u_font-${weight}`]: Boolean(weight),
     [`u_decoration__${decoration}`]: Boolean(decoration),
     [`u_leading__${leading}`]: Boolean(leading),
   })
@@ -46,6 +47,6 @@ const text = <T extends HTMLTextElements = HTMLTextElements>(props: TextProps<T>
       {children}
     </Comp>
   )
-}
+}) as ForwardRefComponent<'p', TextProps>
 
 export default text

@@ -3,9 +3,10 @@ import { forwardRef } from 'react'
 import { classnames } from '@utils/classnames'
 import { Spinner } from '..'
 
-import { ButtonProps } from './button.type'
+import type { ButtonProps } from './button.type'
+import type { ForwardRefComponent } from '@type/polymorphic.type'
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+const Button = forwardRef((props, ref) => {
   let {
     color = 'primary',
     size = 'md',
@@ -16,6 +17,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
     icon,
     fluid = false,
     iconPosition = 'start',
+    className,
     ...rest
   } = props
 
@@ -35,22 +37,22 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
     </div>
   ) : null
 
-  const className = classnames(`btn btn__${size} btn__${variant} u_${color} u_radius__${radius}`, {
+  const buttonClassName = classnames(`btn btn__${size} btn__${variant} u_${color} u_radius__${radius}`, {
     btn__loading: isLoading,
     btn__fluid: fluid,
+    [className!]: Boolean(className),
   })
-
   const disableIfLoading = isLoading ? { disabled: true } : {}
 
   return (
-    <button {...className} type="button" {...rest} {...disableIfLoading} ref={ref}>
+    <button {...buttonClassName} type="button" {...rest} {...disableIfLoading} ref={ref}>
       {leftIcon}
       {children}
       {rightIcon}
       {loadingUI}
     </button>
   )
-})
+}) as ForwardRefComponent<'button', ButtonProps>
 
 Button.displayName = 'Button'
 

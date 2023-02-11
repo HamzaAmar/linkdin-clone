@@ -1,10 +1,10 @@
 import type { ReactNode } from 'react'
 
-type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+type Size = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
 type Heading = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 type Align = 'start' | 'end' | 'center' | 'justify'
 type Transform = 'uppercase' | 'lowercase' | 'capitalize'
-type Weight = 'normal' | 'bold'
+type Weight = 'thin' | 'extra-light' | 'light' | 'normal' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black'
 type Color = 'primary' | 'secondary' | 'text' | 'danger' | 'warning' | 'success'
 type Shade = '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
 export type Leading = 'none' | 'sm' | 'md' | 'lg'

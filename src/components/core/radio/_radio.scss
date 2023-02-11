@@ -1,0 +1,108 @@
+@use '../../../scss/settings/ease' as *;
+
+.radio-container {
+  display: inline-flex;
+  gap: 0.5em;
+  align-items: flex-start;
+  padding: 0.25em;
+  border-radius: 0.5em;
+  width: fit-content;
+}
+
+// TODO LOOKING FOR A WAY TO MAKE FOCUS HAPPEN ONLY FOR KEYBOARD USER FOCUS-VISIBLE WITH FOCUS-WITHIN
+
+.radio-container:focus-within {
+  outline: 2px dashed var(--shared-color-5);
+  outline-offset: 2px;
+}
+
+.radio-container[aria-disabled='true'] {
+  color: var(--color-text-1);
+}
+
+.custom-radio {
+  --circe-size: 1.875em;
+
+  background-color: var(--color-background-1);
+  position: relative;
+  border: 1px solid var(--color-background-8);
+  flex: none;
+}
+
+.radio:checked + .custom-radio {
+  box-shadow: inset 0 0 0 0.425em var(--shared-color-7);
+  border-color: transparent;
+}
+
+.custom-radio:hover {
+  border-color: var(--shared-color-4);
+}
+
+.radio-container:active .custom-radio {
+  box-shadow: 0 0 0 3px var(--shared-color-2);
+}
+
+.radio:disabled {
+  cursor: not-allowed;
+}
+
+.radio__label {
+  max-width: 45ch;
+}
+
+.radio:disabled ~ * {
+  color: var(--color-text-5);
+}
+
+.radio:disabled + .custom-radio {
+  background-color: var(--color-background-5);
+  border-color: var(--color-background-5);
+}
+
+// Style Radio Size Start
+.radio--sm {
+  font-size: 0.75rem;
+}
+
+.radio--md {
+  font-size: 0.875rem;
+}
+
+.radio--lg {
+  font-size: 1rem;
+}
+
+/* Radio Group Section Style Start */
+.radio-group {
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--color-text-7);
+  font-size: 0.85rem;
+}
+
+.radio-group--horizontal {
+  flex-direction: vertical;
+}
+
+.radio-group--vertical {
+  flex-direction: column;
+}
+
+/* Radio Group Section Style End */
+
+@media (forced-colors: active) {
+  .radio:disabled ~ * {
+    color: GrayText;
+  }
+
+  .radio:disabled + .custom-radio {
+    background-color: GrayText;
+    border-color: GrayText;
+  }
+
+  .custom-radio::before {
+    background-color: canvastext;
+  }
+}

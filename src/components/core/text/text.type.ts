@@ -1,7 +1,5 @@
 import { ReactNode } from 'react'
 
-type Weight = 'thin' | 'light' | 'extra-light' | 'medium' | 'regular' | 'semi-bold' | 'bold' | 'black'
-
 type Size = '3xs' | '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl'
 
 type Color = 'primary' | 'secondary' | 'text' | 'danger' | 'warning' | 'success'
@@ -13,9 +11,9 @@ export type Leading = 'none' | 'sm' | 'md' | 'lg'
 export type HTMLTextElements = 'span' | 'p' | 'label' | 'small' | 'em' | 'i' | 'strong' | 'b' | 'i' | 'time'
 
 type Transform = 'uppercase' | 'lowercase' | 'capitalize'
+type Weight = 'thin' | 'extra-light' | 'light' | 'normal' | 'medium' | 'semi-bold' | 'bold' | 'extra-bold' | 'black'
 
-interface TextBaseProps<T> {
-  as?: T
+interface TextBaseProps {
   size?: Size
   className?: string
   align?: Align
@@ -29,13 +27,13 @@ interface TextBaseProps<T> {
   leading?: Leading
 }
 
-interface MultiLineTextTruncate<T> extends TextBaseProps<T> {
+interface MultiLineTextTruncate extends TextBaseProps {
   truncate?: 'multiline'
   numberLine: number
 }
 
-interface SingleLineTextTruncate<T> extends TextBaseProps<T> {
+interface SingleLineTextTruncate extends TextBaseProps {
   truncate?: 'singleline'
 }
 
-export type TextProps<T> = MultiLineTextTruncate<T> | SingleLineTextTruncate<T>
+export type TextProps = MultiLineTextTruncate | SingleLineTextTruncate

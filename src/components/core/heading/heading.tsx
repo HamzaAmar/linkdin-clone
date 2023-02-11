@@ -31,7 +31,7 @@ const heading = (props: HeadingProps) => {
     [`${className}`]: Boolean(className),
     [`u_transform__${transform}`]: Boolean(transform),
     [`u_align__${align}`]: Boolean(align),
-    [`u_weight__${weight}`]: Boolean(weight),
+    [`u_font-${weight}`]: Boolean(weight),
     [`u_decoration__${decoration}`]: Boolean(decoration),
     [`u_leading__${leading}`]: Boolean(leading),
   })

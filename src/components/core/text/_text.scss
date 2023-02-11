@@ -1,9 +1,5 @@
 .text {
   color: var(--color-text, currentColor);
-
-  // display: inline-flex;
-  display: flex;
-  gap: 0.25rem;
   max-width: 100%;
 }
 
