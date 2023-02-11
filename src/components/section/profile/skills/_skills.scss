@@ -1,0 +1,19 @@
+.skill {
+  background-color: red;
+}
+
+.profile-skill--item {
+  min-height: 4rem;
+}
+
+.profile-skill--footer {
+  width: calc(100% + 2.5rem);
+  margin-left: -1.25rem;
+  margin-bottom: -0.5rem;
+  border-top: 1px solid rgba(0 0 0 / 10%);
+  padding: 0;
+}
+
+.profile-skill--more-detail-button {
+  color: var(--color-text-8);
+}

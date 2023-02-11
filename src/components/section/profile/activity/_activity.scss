@@ -1,0 +1,17 @@
+.profile--activity {
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255 255 255);
+}
+
+.profile--activity > *:not(:last-child) {
+  padding: 0.5rem 1rem;
+}
+
+.profile--activity--footer {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.profile-activity--reaction-buttons {
+  box-shadow: none;
+}

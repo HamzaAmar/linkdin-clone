@@ -1,0 +1,27 @@
+.profile-header {
+  border-radius: 1rem;
+  background-color: var(--color-background-0);
+  overflow: hidden;
+  border: 1px solid rgba(0 0 0 / 10%);
+}
+
+.profile-header--header {
+  height: 15rem;
+  position: relative;
+}
+
+.profile-header--hero-image {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-header--avatar {
+  position: absolute;
+  bottom: -1rem;
+  left: 1rem;
+}
+
+.profile-header--main {
+  padding: 1rem;
+}

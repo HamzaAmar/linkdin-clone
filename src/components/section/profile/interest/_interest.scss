@@ -1,0 +1,39 @@
+.profile-interest {
+  padding: 0;
+}
+
+.profile-interest--tablist {
+  border-bottom: 1px solid rgba(0 0 0 / 10%);
+  padding: 0 0.75rem;
+}
+
+.profile-interest--tablist-button[aria-selected='true'] {
+  color: var(--color-success-7);
+  border-bottom: 2px solid;
+}
+
+.profile-interest--tablist-button:focus {
+  outline: 1px solid transparent;
+}
+
+.profile-interest--tablist-button {
+  padding: 1rem 0.25rem;
+  font-weight: 500;
+  color: var(--color-text-7);
+  font-size: 0.875rem;
+}
+
+.profile-interest--tablist-button:active {
+  background-color: rgba(0 0 0 / 10%);
+  color: var(--color-text-2);
+}
+
+.profile-interest--header {
+  padding: 0.125rem 1rem;
+  padding-top: 1rem;
+}
+
+.profile-interest--tabpanel {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0 0 0 / 10%);
+}
