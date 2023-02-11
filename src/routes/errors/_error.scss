@@ -1,0 +1,21 @@
+.error {
+  display: grid;
+  grid-template-rows: 4rem 1fr 4rem;
+  height: 100%;
+  width: 100%;
+}
+
+.error__header {
+  justify-items: flex-start;
+}
+
+.error__header,
+.error__footer {
+  width: 100%;
+  background-color: var(--color-background-0);
+}
+
+.error__footer {
+  color: var(--color-text-7);
+  font-size: 0.75rem;
+}
