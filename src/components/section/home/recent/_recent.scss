@@ -1,0 +1,31 @@
+.recent {
+  --box-padding-inline: 0;
+}
+
+.recent--item-link {
+  width: 100%;
+  padding-inline: 0.5rem 0.075rem;
+  color: var(--color-text-7);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.recent--item-link:hover {
+  background-color: rgba(0 0 0 / 10%);
+}
+
+.recent--header {
+  padding-inline: 0.75rem;
+}
+
+.recent--header:hover .recent--hide-list-button {
+  visibility: visible;
+}
+
+.recent--hide-list-button {
+  visibility: hidden;
+}
+
+.recent--list[data-close='true'] {
+  display: none;
+}

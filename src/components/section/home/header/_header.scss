@@ -1,0 +1,28 @@
+.home-header {
+  --flow-gap: 0.5rem;
+}
+
+.home-header--button {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-7);
+  padding: 0.675rem 0.25rem;
+}
+
+.post-creation--dialog-content {
+  --flow-gap: 2rem;
+
+  min-height: 25vh;
+}
+
+.post-creation--dialog-file-input {
+  appearance: none;
+}
+
+.post-dialog--upload-image-label {
+  background-color: rgba(0 0 0 / 5%);
+  min-height: 30vh;
+  width: calc(100% + 2rem);
+  margin-inline-start: -1rem;
+  margin-block-start: -0.75rem;
+}
