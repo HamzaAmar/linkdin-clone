@@ -1,0 +1,23 @@
+.manage-network {
+  max-width: 380px;
+  color: var(--color-text-7);
+}
+
+.manage-network > * {
+  border-bottom: 1px solid rgba(0 0 0 / 10%);
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.manage-network__item {
+  padding: 0.35rem 1rem;
+  margin-inline: -1.25rem;
+}
+
+.manage-network__item:hover {
+  background-color: rgba(0 0 0 / 10%);
+}
+
+.personal-contact {
+  text-align: center;
+}
