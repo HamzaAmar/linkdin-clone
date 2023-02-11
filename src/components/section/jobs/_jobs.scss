@@ -1,0 +1,39 @@
+.jobs--list > * + * {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.jobs--header {
+  padding: 0.5rem;
+}
+
+.jobs-container > * + * {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.jobs-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+.job-header--list > * {
+  padding: 0.375rem 0;
+}
+
+.job-header {
+  padding: 0;
+
+  --flow-gap: 0.25rem;
+}
+
+.job-header > *:not(:last-child) {
+  padding: 0.5rem 1rem;
+}
+
+.job-header--list > * + *,
+.job-header--footer {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.job-header--footer {
+  padding-block: 0.5rem;
+}
