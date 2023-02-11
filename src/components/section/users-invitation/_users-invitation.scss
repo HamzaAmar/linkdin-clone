@@ -1,0 +1,9 @@
+.user-invitation--section-header {
+  padding: 0.5rem;
+}
+
+.user-invitation--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
