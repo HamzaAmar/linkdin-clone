@@ -13,7 +13,7 @@ const UserMenuButton = () => {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
         <button type="button" className="header--button u_direction-column u_items-center">
-          <Avatar size="xs" image={USERS_LIST[0].images?.avatar} name={USERS_LIST[0].name} />
+          <Avatar size="xs" image={USERS_LIST[0].images?.avatar} title={USERS_LIST[0].name} />
           <Flex as={Text} items="center" gap="2xs" size="xs" className="header--item-text">
             Me
             <Triangle width={16} />
@@ -24,7 +24,7 @@ const UserMenuButton = () => {
         <DropdownMenu.Content align="start" sideOffset={10} className="menu-button--profile l_box">
           <DropdownMenu.Item>
             <Flex gap="sm">
-              <Avatar name={USERS_LIST[0].name} image={USERS_LIST[0].images?.avatar} />
+              <Avatar title={USERS_LIST[0].name} image={USERS_LIST[0].images?.avatar} />
               <Link to="in/hamza-miloud-amar-463b24167">
                 <Heading color="text" size="xs">
                   Hamza Miloud amar

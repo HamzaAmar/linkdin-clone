@@ -1,10 +1,8 @@
 import { getUserBySlug, getUsers } from '@api/users'
 import { USERS_LIST } from '@api/users/users.data'
 import { Avatar, Flex, IconButton, Text } from '@components/core'
-import { AvatarBadge } from '@components/core/avatar'
 import {
   Attachment,
-  Camera,
   CameraPlus,
   Chevron,
   Cross,
@@ -25,8 +23,8 @@ const MessageItem = ({ name, description, images, id, handleOpen }: MessageItemP
     <Flex as="button" onClick={() => handleOpen(id)} items="start" justify="between" gap="xs" className="message">
       <Flex gap="xs">
         <div>
-          <Avatar image={images?.avatar} name={name}>
-            <AvatarBadge variant="dot" size="lg" color="success" />
+          <Avatar image={images?.avatar} title={name}>
+            <Avatar.Badge variant="dot" size="lg" color="success" />
           </Avatar>
         </div>
         <div>
@@ -60,7 +58,7 @@ const MessageChatItem = ({ handleClose, id }: MessageChatItemProps) => {
     >
       <header className="messages--header">
         <Flex onClick={shrink.handleToggle} justify="between" items="center" gap="xs" as="button">
-          <Avatar size="sm" image={images?.avatar} name={name} />
+          <Avatar size="sm" image={images?.avatar} title={name} />
           <div className="u_leading__sm">
             <Text weight="medium" size="sm" truncate="multiline" numberLine={1}>
               {name}
@@ -142,8 +140,8 @@ const Messages = () => {
       <div className="message-shared hero--message l_box" data-shrink={state}>
         <Flex className="messages--header" items="center" justify="between" as="header">
           <Flex flex="1" as="button" onClick={handleToggle} items="center" gap="xs">
-            <Avatar size="sm" image={USERS_LIST[0].images?.avatar} name={USERS_LIST[0].name}>
-              <AvatarBadge variant="dot" size="sm" color="success" />
+            <Avatar size="sm" image={USERS_LIST[0].images?.avatar} title={USERS_LIST[0].name}>
+              <Avatar.Badge variant="dot" size="sm" color="success" />
             </Avatar>
             <Text size="sm" weight="medium">
               Messaging
