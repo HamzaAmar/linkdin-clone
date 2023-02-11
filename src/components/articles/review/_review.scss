@@ -1,0 +1,56 @@
+.review-content-container {
+  --flow-gap: 0.5rem;
+}
+
+.review-content {
+  background-color: rgba(0 0 0 / 5%);
+  border-radius: 1rem;
+  padding: 0.75rem;
+}
+
+.review-input--button-container {
+  color: var(--color-text-7);
+}
+
+.review-content--button {
+  background-color: transparent;
+  padding: 0.125rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-text-7);
+}
+
+.review-input--container {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid rgba(0 0 0 / 10%);
+  height: fit-content;
+  background-color: var(--color-background-0);
+}
+
+.review-input--container:hover {
+  box-shadow: 0 0 0 1px rgba(0 0 0 / 30%);
+  border-color: rgba(0 0 0 / 30%);
+}
+
+.review-input--text-field {
+  width: 100%;
+  appearance: none;
+  border: none;
+  outline: none;
+  resize: none;
+  min-height: 100%;
+  display: block;
+  border-radius: 20px;
+  margin: 0;
+  padding-block: 0.125rem;
+  padding-inline: 1rem;
+  line-height: 1.2;
+  overflow-y: visible;
+}
+
+.review-input--label {
+  width: 100%;
+  line-height: 0;
+}
