@@ -1,0 +1,46 @@
+.create-post-dialog--overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0 0 0 / 60%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.create-post-dialog--main {
+  min-height: 15rem;
+}
+
+.create-post-dialog--add-hash {
+  margin-top: auto;
+}
+
+.create-post--button-header {
+  justify-content: start;
+  padding-inline-start: 1rem;
+  color: var(--color-text-10);
+  border-color: currentcolor;
+}
+
+.create-post-dialog--content {
+  min-width: 380px;
+  padding: 0;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px -2px rgba(0 0 0 / 90%);
+
+  & > * {
+    padding: 0.75rem 1rem;
+  }
+}
+
+.create-post-dialog--header {
+  border-bottom: 1px solid rgba(0 0 0 / 10%);
+}
+
+.create-post-dialog--footer {
+  color: var(--color-text-7);
+}
