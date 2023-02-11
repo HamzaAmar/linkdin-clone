@@ -2,3 +2,20 @@
 @forward '../../components/section/notifications/notifications';
 @forward '../../components/section/jobs/jobs';
 @forward '../../components/section/users-invitation/users-invitation';
+
+// Profile Section style
+@forward '../../components/section/profile/activity/activity';
+@forward '../../components/section/profile/analytic/analytic';
+@forward '../../components/section/profile/education/education';
+@forward '../../components/section/profile/experience/experience';
+@forward '../../components/section/profile/header/header';
+@forward '../../components/section/profile/interest/interest';
+@forward '../../components/section/profile/language/language';
+@forward '../../components/section/profile/resource/resource';
+@forward '../../components/section/profile/skills/skills';
+@forward '../../components/section/messageList/message-list';
+
+// Home Section Style
+@forward '../../components/section/home/header/header';
+@forward '../../components/section/home/feed/feed';
+@forward '../../components/section/home/recent/recent';
