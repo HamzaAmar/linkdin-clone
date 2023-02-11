@@ -1,0 +1,19 @@
+.invitations-container {
+  padding: 0;
+}
+
+.invitations-container > * + * {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.invitations--header {
+  padding: 0.75rem 1rem;
+}
+
+.invitations--list > * {
+  padding: 0.5rem 0.75rem;
+}
+
+.invitations--list > * + * {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
