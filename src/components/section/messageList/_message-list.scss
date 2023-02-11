@@ -1,0 +1,109 @@
+.container--ms {
+  padding: 0;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+.message--user-list {
+  flex: 1 1 150px;
+}
+
+.message--area {
+  flex: 3 1 auto;
+}
+
+.message--header {
+  border-bottom: 1px solid rgba(0 0 0 / 10%);
+  padding: 0 0.5rem;
+  height: 3rem;
+}
+
+.message--users-list {
+  overflow: auto;
+  height: calc(100% - 3rem);
+}
+
+.message--users-list > * {
+  padding: 0.25rem 0.5rem;
+}
+
+.message--users-list > * + * {
+  border-top: 1px solid rgba(0 0 0 / 10%);
+}
+
+.message--icon-wrapper {
+  color: var(--color-text-5);
+}
+
+.message--item-button {
+  text-align: start;
+  width: 100%;
+  padding: 0.5rem;
+  border-inline-start: 4px solid transparent;
+  position: relative;
+}
+
+.message--item-button[aria-current='page'] {
+  border-color: var(--color-success-6);
+  background-color: var(--color-primary-0);
+}
+
+.message--item-button:hover {
+  background-color: rgba(0 0 0 / 10%);
+}
+
+.message--item-button:hover .message--user-settings,
+.message--item-button:focus-within .message--user-settings {
+  visibility: visible;
+}
+
+.message--item-button:hover .message--user-date,
+.message--item-button:focus-within .message--user-date {
+  display: none;
+}
+
+.message--user-settings svg {
+  width: 0.85em;
+}
+
+.message--user-settings {
+  visibility: hidden;
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
+  justify-self: end;
+}
+
+.message--user-date {
+  grid-column: 2 / 3;
+  grid-row: 1/ 2;
+  justify-self: end;
+}
+
+.message-list--footer {
+  padding-block-end: 2rem;
+}
+
+.message-list--content {
+  flex: 1;
+  overflow: auto;
+}
+
+.message-list--content > :first-child {
+  border-bottom: 1px solid rgba(0 0 0 / 10%);
+  padding: 16px;
+}
+
+.message--user-name {
+  grid-column: 1 / 2;
+  grid-row: 1/ 2;
+}
+
+.message--user-name-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5rem;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1;
+  height: 1.75rem;
+}
